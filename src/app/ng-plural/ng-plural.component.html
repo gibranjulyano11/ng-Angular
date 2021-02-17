@@ -1,0 +1,9 @@
+<div>
+  <h3>Ejemplo ng-Plural</h3> 
+  <div *ngPlural="dataCargada">
+    <some-element [ngPlural]="value">
+      <ng-template ngPluralCase="=0">Hola</ng-template>
+      <ng-template ngPluralCase="=1">Hello</ng-template>
+      <ng-template ngPluralCase="few">Hi</ng-template>
+    </some-element>  </div>
+</div>
